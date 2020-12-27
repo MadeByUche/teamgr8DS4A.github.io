@@ -75,12 +75,12 @@ WSGI_APPLICATION = 'teamgr8DS4A.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        #'USER': '',
-        #'PASSWORD': '',
-        #'HOST': '',
-        #'PORT': ''
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ebdb',
+        'USER': os.environ['DB_DS4A_USER'],
+        'PASSWORD': os.environ['DB_DS4A_PASSWORD'],
+        'HOST': 'aa1t5lrbxvla3y8.coc56ksrm6ds.us-east-2.rds.amazonaws.com',
+        'PORT': '5432'
     }
 }
 
