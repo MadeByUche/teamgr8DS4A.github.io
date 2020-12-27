@@ -25,7 +25,7 @@ SECRET_KEY = '(arw0a68m*g)_f-7t!9u58gc%u0%w*97tbx*53z$__u(=&03_m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'teamgr8-ds4a-env.eba-7w7xwtqz.us-east-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'teamgr8-ds4a-dev.eba-7w7xwtqz.us-east-2.elasticbeanstalk.com']
 
 
 # Application definition
@@ -77,6 +77,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'USER': '',
+        #'PASSWORD': '',
+        #'HOST': '',
+        #'PORT': ''
     }
 }
 
